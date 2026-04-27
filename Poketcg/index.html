@@ -81,12 +81,12 @@
       /* form card */
       .form-wrapper {
         position: absolute;
-        left: 32%;
+        left: 35%;
         top: 401px;
         display: inline-flex;
         flex-direction: column;
         gap: 16px;
-        align-items: flex-start;
+        align-items: center;
       }
 
       .card {
@@ -191,12 +191,12 @@
         <div class="card" role="form" aria-label="Sign in">
           <div class="field">
             <div style="color:var(--text,white); font-size:16px;">Email</div>
-            <div class="input">enter</div>
+            <input class="Email" type="email" placeholder="Enter your email" />
           </div>
 
           <div class="field">
             <div style="color:var(--text,white); font-size:16px;">Password</div>
-            <div class="input">pass</div>
+            <input class="Pass" type="password" placeholder="Enter your password" />
           </div>
 
           <div class="actions">
@@ -206,13 +206,13 @@
           <div style="width:100%; text-align:left; color: white; font-size:16px; text-decoration:underline;">Forgot password?</div>
         </div>
 
-        <div style="width:680px; color:white; font-size:16px;">Error</div>
+        <div class= "error" style="width:680px; color:white; font-size:16px;">Error</div>
       </div>
     </div>
   </body>
 
 
 </html>    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="src/main.jsx"></script>
   </body>
 </html>

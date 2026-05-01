@@ -1,36 +1,57 @@
-      import React from 'react';
-      import './App.css';
+import './App.css'
+import { useState } from 'react'
 
-      const SignIn = () => {
-        return (
-          <div class="form-wrapper">
-            <div class="card" role="form" aria-label="Sign in">
-              <div class="field">
-                <div style="color:var(--text,white); font-size:16px;">Email</div>
-                <input class="Email" type="email" placeholder="Enter your email" />
-              </div>
+const SignIn = () => {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
 
-          <div class="field">
-            <div style="color:var(--text,white); font-size:16px;">Password</div>
-            <input class="Pass" type="password" placeholder="Enter your password" />
-          </div>
+  const handleLogin = (event) => {
+    event.preventDefault()
+    console.log('Login attempt', { email, password })
+    alert('Login is not wired yet. This is a placeholder.')
+  }
 
-          <div class="actions">
-            <button class="btn-primary" onClick={login}>Sign In</button>
-          </div>
-
-          <div style="width:100%; text-align:left; color: white; font-size:16px; text-decoration:underline;">Forgot password?</div>
+  return (
+    <div className="form-wrapper">
+      <div className="card" role="form" aria-label="Sign in">
+        <div className="field">
+          <div style={{ color: 'var(--text, white)', fontSize: '16px' }}>Email</div>
+          <input
+            className="Email"
+            type="email"
+            placeholder="Enter your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
         </div>
 
-        <div class= "error" style="width:680px; color:white; font-size:16px;">Error</div>
+        <div className="field">
+          <div style={{ color: 'var(--text, white)', fontSize: '16px' }}>Password</div>
+          <input
+            className="Pass"
+            type="password"
+            placeholder="Enter your password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </div>
+
+        <div className="actions">
+          <button className="btn-primary" onClick={handleLogin}>
+            Sign In
+          </button>
+        </div>
+
+        <div style={{ width: '100%', textAlign: 'left', color: 'white', fontSize: '16px', textDecoration: 'underline' }}>
+          Forgot password?
+        </div>
       </div>
-    );
-  };
 
-  export default SignIn;
+      <div className="error" style={{ width: '680px', color: 'white', fontSize: '16px' }}>
+        Error
+      </div>
+    </div>
+  )
+}
 
-  function login() {
-    const email = document.querySelector('.Email').value;
-    const password = document.querySelector('.Pass').value;
-    fetch
-  }
+export default SignIn

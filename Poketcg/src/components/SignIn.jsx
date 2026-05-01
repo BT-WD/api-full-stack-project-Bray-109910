@@ -32,4 +32,5 @@
   function login() {
     const email = document.querySelector('.Email').value;
     const password = document.querySelector('.Pass').value;
+    fetch
   }

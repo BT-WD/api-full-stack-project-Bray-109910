@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "mongodb": "^7.2.0"
+  },
+  "name": "api-full-stack-project-Bray-109910",
+  "private": true,
+  "scripts": {
+    "dev": "cd Poketcg && npm run dev"
+  }
+}

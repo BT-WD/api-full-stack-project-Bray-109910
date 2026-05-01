@@ -1,4 +1,4 @@
-import './App.css'
+import '/src/App.css'
 import { useState } from 'react'
 
 const SignIn = () => {
@@ -12,10 +12,10 @@ const SignIn = () => {
   }
 
   return (
-    <div className="form-wrapper">
+    <div className="form-wrapper" style={{ left: "50%", alignSelf:  "center", transform: "translateX(-50%)", gap: "16px" }}>
       <div className="card" role="form" aria-label="Sign in">
         <div className="field">
-          <div style={{ color: 'var(--text, white)', fontSize: '16px' }}>Email</div>
+          <div style={{ color: 'var(--text, white)', fontSize: '16px', alignSelf: 'flex-start' }}>Email</div>
           <input
             className="Email"
             type="email"
@@ -26,7 +26,7 @@ const SignIn = () => {
         </div>
 
         <div className="field">
-          <div style={{ color: 'var(--text, white)', fontSize: '16px' }}>Password</div>
+          <div style={{ color: 'var(--text, white)', fontSize: '16px', alignSelf: 'flex-start' }}>Password</div>
           <input
             className="Pass"
             type="password"

@@ -30,12 +30,12 @@ function App() {
       <div className="title-block" aria-hidden="true">
         <div className="title">PokeTCG Player</div>
 
-        <svg className="decor-svg" style={{  top: '180px' }} viewBox="0 0 397 85" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <svg className="decor-svg bottom-decor" viewBox="0 0 397 85" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <path d="M396.992 26.5671C395.667 109.067 196.452 80.0528 196.452 80.0528C196.452 80.0528 1.33043 108.884 0.00769075 26.5671C-1.31505 -55.7495 168.39 80.0528 196.452 80.0528C224.514 80.0528 398.318 -55.9326 396.992 26.5671Z" fill="#D9D9D9" />
         </svg>
 
-        <svg className="decor-svg" style={{ top: '55px' }} viewBox="0 0 397 85" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M0.00753784 58.3996C1.3331 -24.1 200.5 4.96674 200.5 4.96674C200.5 4.96674 395.67 -23.9169 396.992 58.3997C398.315 140.716 228.562 4.96675 200.5 4.96674C172.438 4.96672 -1.31802 140.899 0.00753784 58.3996Z" fill="#EA7A7A" />
+        <svg className="decor-svg top-decor" viewBox="0 0 397 85" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M0.00753784 58.3996C1.3331 -24.1 200.5 4.96674 200.5 4.96674C200.5 4.96674 395.67 -23.9169 396.992 58.3997C398.315 140.716 228.562 4.96675 200.5 4.96674C172.438 4.96672 -1.31802 140.899 0.00753784 58.3996Z" fill="#f55d5d" />
         </svg>
       </div>
 

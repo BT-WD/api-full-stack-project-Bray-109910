@@ -10,6 +10,9 @@ const SignIn = () => {
   const [isSignUp, setIsSignUp] = useState(false)
 
   const handleLogin = async (event) => {
+    window.location.href = "deck-builder.html";
+    //This is a placeholder for the login functionality. The actual implementation would involve sending a POST request to the server with the email and password, handling the response, and managing authentication state.
+    /*
     event.preventDefault()
     setLoading(true)
     setError('')
@@ -32,6 +35,7 @@ const SignIn = () => {
     } finally {
       setLoading(false)
     }
+      */
   }
 
   const handleSignUp = async (event) => {

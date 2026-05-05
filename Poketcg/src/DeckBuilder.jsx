@@ -26,19 +26,6 @@ const DeckBuilder = () => {
       >
         <Cardinfo ability="Fire Blast" move1="Flame Thrower" move2="Dragon Claw" retreat="2" />
       </div>
-      {/* Right Panel */}
-      <div
-      className='right-panel'
-        style={{
-          width: '227px',
-          height: '100%',
-          left: '85%',
-          top: '113px',
-          position: 'absolute',
-          background: '#D9D9D9',
-        }}
-      >
-      </div>
 
       {/* SVG Component */}
       <SearchField tcgdex={tcgdex} />
